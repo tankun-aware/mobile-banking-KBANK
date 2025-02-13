@@ -59,7 +59,7 @@ export const data ={
     
     
     urlFail_data: 'https://postman-echo.com/get?case=fail',
-    bankCode_data: '006',
+    bankCode_data: '004',
     callbackType_data: 'WEB',
     deeplinkFlag_data: 'Y',
     mobilePlatform_data: '1234',
@@ -239,7 +239,7 @@ export const data ={
     response_validateToken_respSysDesc_headerInlvalid: 'Invalid header',
 
     expect_txnId: '924291105546163014945',
-    expect_bankCode: '006',
+    expect_bankCode: '004',
 
 
 
@@ -458,7 +458,7 @@ export const data ={
     serviceID_data_mpayone: '21219922213900864',
     channelType_data_mpayone: 'APPLICATION',
     cust_id_data_mpayone: 'cust_id_00001',
-    bank_code_data_mpayone: "006",
+    bank_code_data_mpayone: "004",
     ref_1_data_mpayone: "ref_1",
     ref_2_data_mpayone: "ref_2",
     ref_3_data_mpayone: "ref_3",

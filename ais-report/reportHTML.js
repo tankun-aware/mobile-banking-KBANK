@@ -83,7 +83,7 @@ async function ais_report() {
             <div class="col-md-6">
                 <div class="card p-3 mb-3 message-box">
                     <h4>Overview</h4>
-                    <p><strong>● Project Name: </strong>Mobile Banking KTB</p>
+                    <p><strong>● Project Name: </strong>Mobile Banking KBANK</p>
                     <p><strong>● Test Date: </strong>${formattedDate}</p>
                     <p><strong>● Test Time: </strong>${formattedTime} (Thailand Time)</p>
                     <p><strong>● Test Team: </strong>Automate test KIOSK</p>
@@ -867,7 +867,7 @@ async function ais_report() {
     </body>
   </html>`;
 
-  fs.writeFileSync('Test-Result-KTB ().html', html);
+  fs.writeFileSync('Test-Result-KBANK ().html', html);
 }
 
 module.exports = ais_report;
