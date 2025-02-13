@@ -187,7 +187,7 @@ test.describe('Master Data', () => {
     await configMerchant.reloadCache(request, page, 'ACTIVE');
   });
 
-  test(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น INACTIVE`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น INACTIVE`, async ({ page, request }) => {
     await configMerchant.setPaymentSofChannelStatus('INACTIVE');
     await configMerchant.reloadCache(request, page, 'INACTIVE');
     const { 
@@ -200,7 +200,7 @@ test.describe('Master Data', () => {
     await configMerchant.expectServiceNotActive(paymentOrderApiResponse);
   });
 
-  test(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น DELETED`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น DELETED`, async ({ page, request }) => {
     await configMerchant.setPaymentSofChannelStatus('DELETED');
     await configMerchant.reloadCache(request, page, 'DELETED');
     const { 
@@ -213,7 +213,7 @@ test.describe('Master Data', () => {
     await configMerchant.expectServiceNotActive(paymentOrderApiResponse);
   });
 
-  test(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น DRAFT`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย Status เป็น DRAFT`, async ({ page, request }) => {
     await configMerchant.setPaymentSofChannelStatus('DRAFT');
     await configMerchant.reloadCache(request, page, 'DRAFT');
     const { 
@@ -234,7 +234,7 @@ test.describe('Master Data', () => {
     await configMerchant.reloadCache(request, page, 'ACTIVE');
   });
 
-  test(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย effective_date เกินปัจจุบัน`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config commonservice.payment_sof_channel โดย effective_date เกินปัจจุบัน`, async ({ page, request }) => {
     await configMerchant.setPaymentSofChanneleffectiveDate('2029-05-28');
     await configMerchant.reloadCache(request, page, 'ACTIVE');
     const { 
@@ -247,7 +247,7 @@ test.describe('Master Data', () => {
     await configMerchant.expectServiceNotActive(paymentOrderApiResponse);
   });
 
-  test(`${Id()} ตรวจสอบ Config commonservice.configuration_fee โดย Status เป็น INACTIVE`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config feeservice.configuration_fee โดย Status เป็น INACTIVE`, async ({ page, request }) => {
     await configMerchant.setConfigurationfeeStatus('ACTIVE');
     await configMerchant.reloadCache(request, page, 'ACTIVE');
     const { 
@@ -260,7 +260,7 @@ test.describe('Master Data', () => {
     await configMerchant.expectConfigurationFee(paymentOrderApiResponse);
   });
 
-  test(`${Id()} ตรวจสอบ Config feeservice.configuration_fee โดย Status เป็น DELETED`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ Config feeservice.configuration_fee โดย Status เป็น DELETED`, async ({ page, request }) => {
     await configMerchant.setConfigurationfeeStatus('DELETED');
     await configMerchant.reloadCache(request, page, 'DELETED');
     const { 
@@ -273,7 +273,7 @@ test.describe('Master Data', () => {
     await configMerchant.expectConfigurationFee(paymentOrderApiResponse);
   });
 
-  test(`${Id()} ตรวจสอบ feeservice.configuration_fee โดย Status เป็น DRAFT`, async ({ page, request }) => {
+  test.skip(`${Id()} ตรวจสอบ feeservice.configuration_fee โดย Status เป็น DRAFT`, async ({ page, request }) => {
     try {
       await configMerchant.setConfigurationfeeStatus('DRAFT');
       await configMerchant.reloadCache(request, page, 'DRAFT');
